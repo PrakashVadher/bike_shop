@@ -86,7 +86,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="copy-text">
-                <p><i class="icon-heart red mr-15"></i>© 2015 Comet Agency.</p>
+                <p><i class="icon-heart red mr-15"></i>© {{ date('Y') }} Comet Agency.</p>
               </div>
             </div>
             <div class="col-md-4">

@@ -16,3 +16,8 @@ Route::get('/', 'Front\HomeController@index');
 Route::get('home', 'Front\HomeController@index');
 Route::get('products', 'Front\ProductsController@index');
 Route::get('products/{id}', 'Front\ProductsController@show');
+
+
+/* Admin Panel Routes */
+
+Route::get('admin/dashboard', 'Admin\DashboardController@index');
