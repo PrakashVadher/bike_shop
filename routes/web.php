@@ -13,11 +13,18 @@
 
 Route::get('/', 'Front\HomeController@index');
 
-Route::get('home', 'Front\HomeController@index');
+/*Route::get('home', 'Front\HomeController@index');
 Route::get('products', 'Front\ProductsController@index');
-Route::get('products/{id}', 'Front\ProductsController@show');
+Route::get('products/{id}', 'Front\ProductsController@show');*/
 
 
-/* Admin Panel Routes */
 
-Route::get('admin/dashboard', 'Admin\DashboardController@index');
+/* Admin Panel Routes  Start */
+/*Route::get('control-panel', 'Admin\DashboardController@dashboard')->name('admin');
+Route::get('dashboard/', 'Admin\DashboardController@dashboard');
+Route::get('admin/dashboard', 'Admin\DashboardController@dashboard');*/
+
+/* Admin Products */
+/*Route::get('admin/products', 'Admin\ProductsController@index');
+Route::get('admin/product/add', 'Admin\ProductsController@create');*/
+/* Admin Panel Routes End */

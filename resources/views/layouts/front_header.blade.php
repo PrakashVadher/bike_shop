@@ -82,7 +82,7 @@
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
             <li class="">
-              <a href="{{URL::to('/')}}/home">Home</a>
+              <a href="{{ route('front.home') }}">Home</a>
               <!-- <ul class="submenu megamenu">
                 <li>
                   <ul>
@@ -159,7 +159,7 @@
               </ul> -->
             </li>
             <li class="">
-              <a href="{{URL::to('/')}}/products">Products</a>              
+              <a href="{{ route('front.products') }}">Products</a>              
             </li>
             <!-- <li class="has-submenu">
               <a href="#">Pages</a>

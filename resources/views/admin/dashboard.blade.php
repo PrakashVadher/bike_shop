@@ -1533,7 +1533,7 @@
                                                               <div class="widget-content-left mr-3">
                                                                   <div class="widget-content-left">
                                                                       <img width="42" class="rounded"
-                                                                           src="{{URL::to('/')}}/admin/assets/images/avatars/1.jpg"
+                                                                           src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/1.jpg"
                                                                            alt="">
                                                                   </div>
                                                               </div>
@@ -1741,7 +1741,7 @@
                                                               <div class="widget-content-left mr-3">
                                                                   <div class="widget-content-left">
                                                                       <img width="42" class="rounded"
-                                                                           src="{{URL::to('/')}}/admin/assets/images/avatars/1.jpg"
+                                                                           src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/1.jpg"
                                                                            alt="">
                                                                   </div>
                                                               </div>
@@ -1863,7 +1863,7 @@
                                                           <div class="avatar-icon-wrapper mr-1">
                                                               <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                               <div class="avatar-icon avatar-icon-lg rounded">
-                                                                  <img src="{{URL::to('/')}}/admin/assets/images/avatars/2.jpg"
+                                                                  <img src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/2.jpg"
                                                                        alt="">
                                                               </div>
                                                           </div>
@@ -1898,7 +1898,7 @@
                                                               <div class="avatar-icon-wrapper ml-1">
                                                                   <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                                   <div class="avatar-icon avatar-icon-lg rounded">
-                                                                      <img src="{{URL::to('/')}}/admin/assets/images/avatars/3.jpg"
+                                                                      <img src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/3.jpg"
                                                                            alt="">
                                                                   </div>
                                                               </div>
@@ -1910,7 +1910,7 @@
                                                           <div class="avatar-icon-wrapper mr-1">
                                                               <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                               <div class="avatar-icon avatar-icon-lg rounded">
-                                                                  <img src="{{URL::to('/')}}/admin/assets/images/avatars/2.jpg"
+                                                                  <img src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/2.jpg"
                                                                        alt="">
                                                               </div>
                                                           </div>
@@ -1944,7 +1944,7 @@
                                                               <div class="avatar-icon-wrapper ml-1">
                                                                   <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                                   <div class="avatar-icon avatar-icon-lg rounded">
-                                                                      <img src="{{URL::to('/')}}/admin/assets/images/avatars/2.jpg"
+                                                                      <img src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/2.jpg"
                                                                            alt="">
                                                                   </div>
                                                               </div>
@@ -1966,7 +1966,7 @@
                                                               <div class="avatar-icon-wrapper ml-1">
                                                                   <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                                   <div class="avatar-icon avatar-icon-lg rounded">
-                                                                      <img src="{{URL::to('/')}}/admin/assets/images/avatars/2.jpg"
+                                                                      <img src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/2.jpg"
                                                                            alt="">
                                                                   </div>
                                                               </div>
