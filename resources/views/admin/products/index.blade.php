@@ -1,6 +1,7 @@
 @extends('layouts.admin_master') @section('content')
 <style type="text/css">
-.action-btn{ float: left;}
+.action-button{ float: left;}
+
 </style>
 <div class="card mb-3">
     <div class="card-header-tab card-header">
@@ -38,9 +39,9 @@
                     <th>#</th>
                     <th>Product Name</th>
                     <th>Image</th>
-                    <th>Descritpion</th>
-                    <th>Created Date</th>
-                    <th>Updated Date</th>
+                    
+                    <th>Price</th>
+                    <th>Sale Price</th>
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>
@@ -53,7 +54,7 @@
                     <td>{{ $product->product_name }}</td>
                     
                     @php
-                        $image = $product->images ? explode(",",$product->images)[0] : "default.png";                        
+                        $image = $product->images ? explode(",",$product->images)[0] : "default.png";
                         $status = "Active";
                         $class = "success";
                         if ($product->status == 0){
@@ -63,28 +64,22 @@
                     @endphp
                     
                     <td><img src="{{url('/')}}/back_end_admin/uploads/{{$image}}" height="40" width="40"/></td>
-                    <td>{{ $product->short_description }}</td>
-                    <td>{{ $product->created_at }}</td>
-                    <td>{{ $product->updated_at }}</td>
+                    
+                    <td>{{ $product->price }}</td>
+                    <td>{{ $product->sale_price }}</td>
                     <td><div class="badge badge-pill badge-{{$class}}">{{ $status }}</div></td>
                     <td>
-                        <a href="{{ route('admin.show_product', ['id' => $product->id]) }}">
-                            <div class="action-btn font-icon-wrapper">
-                                <i class="lnr-eye icon-gradient bg-happy-fisher"> </i>
-                            </div>
+                        <a href="{{ route('admin.products.show',$product->id) }}" class="btn btn-success action-button">
+                            View
                         </a>
-                        <a href="{{ route('admin.edit_product', ['id' => $product->id]) }}">
-                            <div class="action-btn font-icon-wrapper">
-                                <i class="lnr-cog icon-gradient bg-tempting-azure"> </i>
-                            </div>
+                        <a href="{{ route('admin.products.edit',$product->id) }}" class="btn btn-primary action-button">                            
+                            Edit
                         </a>
-                        <a href="{{ route('admin.delete_product', ['id' => $product->id]) }}">
-                            <div class="action-btn font-icon-wrapper">
-                                <i class="lnr-trash icon-gradient bg-amy-crisp"> </i>
-                            </div>
-                        </a>
-                        <!-- <button type="button" data-type="question" class="btn btn-primary btn-show-swal">Show Alert
-                        </button> -->
+                        <form class="action-button" action="{{ route('admin.products.destroy', $product->id)}}" method="post">
+                          @csrf
+                          @method('DELETE')                            
+                            <button class="btn btn-danger" type="submit">X</button>
+                        </form>                        
                     </td>
                 </tr>
                     @php $index_no++; @endphp
@@ -94,10 +89,9 @@
                 <tr>
                     <th>#</th>
                     <th>Product Name</th>
-                    <th>Image</th>
-                    <th>Descritpion</th>
-                    <th>Created Date</th>
-                    <th>Updated Date</th>
+                    <th>Image</th>                    
+                    <th>Price</th>
+                    <th>Sale Price</th>
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>

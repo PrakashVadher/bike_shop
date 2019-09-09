@@ -28,3 +28,6 @@ Route::get('admin/dashboard', 'Admin\DashboardController@dashboard');*/
 /*Route::get('admin/products', 'Admin\ProductsController@index');
 Route::get('admin/product/add', 'Admin\ProductsController@create');*/
 /* Admin Panel Routes End */
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

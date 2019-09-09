@@ -38,24 +38,28 @@
           <!-- end of row-->
         </div>
         <div class="row">
-          @for($i=1; $i <= 8; $i++)
+          @foreach ($products as $product)
+            @php
+                $image = $product->images ? explode(",",$product->images)[0] : "default.png";
+            @endphp
           <div class="col-md-3 col-sm-6">
             <div class="shop-product">
               <div class="product-thumb">
-                <a href="products/1">
-                  <img src="front/images/shop/1.jpg" alt="">
+                <a href="{{ route('front.products.show',$product->id) }}">
+                  <img src="{{url('/')}}/back_end_admin/uploads/{{$image}}" alt="" style="width: 300px;
+    height: 200px;">
                 </a>
                 <div class="product-overlay"><a href="#" class="btn btn-color-out btn-sm">Add To Cart<i class="ti-bag"></i></a>
                 </div>
               </div>
               <div class="product-info">
-                <h4 class="upper"><a href="#">Premium Notch Blazer</a></h4><span>$79.99</span>
+                <h4 class="upper"><a href="#">{{ $product->product_name}}</a></h4><span>${{ $product->price}}</span>
                 <div class="save-product"><a href="#"><i class="icon-heart"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          @endfor
+          @endforeach
           <!-- <div class="col-md-3 col-sm-6">
             <div class="shop-product">
               <div class="product-thumb">

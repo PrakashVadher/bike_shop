@@ -159,7 +159,7 @@
               </ul> -->
             </li>
             <li class="">
-              <a href="{{ route('front.products') }}">Products</a>              
+              <a href="{{ route('front.products.index') }}">Products</a>              
             </li>
             <!-- <li class="has-submenu">
               <a href="#">Pages</a>

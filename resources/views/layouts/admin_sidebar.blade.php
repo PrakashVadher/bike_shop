@@ -1,7 +1,7 @@
         <div class="app-sidebar-wrapper">
     <div class="app-sidebar bg-danger sidebar-text-light">
         <div class="app-header__logo">
-            <a href="{{ route('admin.admin')}}" data-toggle="tooltip" data-placement="bottom" title="Bike Shop" class="logo-src"></a>
+            <a href="{{ route('admin.dashboard')}}" data-toggle="tooltip" data-placement="bottom" title="Bike Shop" class="logo-src"></a>
             <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -43,12 +43,12 @@
                         </a>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.all_products') }}">
+                                <a href="{{ route('admin.products.index') }}">
                                     <i class="metismenu-icon"></i>List All
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('admin.add_products') }}">
+                                <a href="{{ route('admin.products.create') }}">
                                     <i class="metismenu-icon"></i>Add new
                                 </a>
                             </li>                            

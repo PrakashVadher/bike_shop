@@ -11,17 +11,26 @@
 |
 */
 
-Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function(){
-	Route::get('admin', 'DashboardController@dashboard')->name('admin');
-	Route::get('admin/dashboard/', 'DashboardController@dashboard')->name('dashboard');
+Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function() {
 	
-	/* Admin Products */
-	Route::get('admin/products', 'ProductsController@index')->name('all_products');
-	Route::get('admin/product/add', 'ProductsController@create')->name('add_products');
-	Route::post('admin/product/save', 'ProductsController@store')->name('save_product');
+	Route::get('admin/login', 'LoginController@index')->name('loginForm');
+	Route::post('admin/login', 'LoginController@login')->name('loginPost');
 
-	Route::get('admin/product/show', 'ProductsController@show')->name('show_product');
-	Route::get('admin/product/edit', 'ProductsController@edit')->name('edit_product');
-	Route::post('admin/product/update', 'ProductsController@update')->name('update_product');
-	Route::get('admin/product/delete', 'ProductsController@remove')->name('delete_product');
+	Route::group(['middleware' => 'admin'], function() {
+		// Route::get('admin', 'DashboardController@dashboard')->name('admin');
+		Route::get('admin/dashboard', 'DashboardController@dashboard')->name('dashboard');
+		Route::get('admin/logout', 'DashboardController@logout')->name('logout');
+		/* Admin Products */
+		// Route::get('admin/products', 'ProductsController@index')->name('all_products');
+		// Route::get('admin/product/add', 'ProductsController@create')->name('add_products');
+		// Route::post('admin/product/save', 'ProductsController@store')->name('save_product');
+
+		// Route::get('admin/product/show', 'ProductsController@show')->name('show_product');
+		// Route::get('admin/product/edit', 'ProductsController@edit')->name('edit_product');
+		// Route::post('admin/product/update', 'ProductsController@update')->name('update_product');
+		// Route::get('admin/product/delete', 'ProductsController@remove')->name('delete_product');
+		Route::prefix('admin')->group(function(){
+			Route::resource('products','ProductsController');	
+		});	
+	});
 });

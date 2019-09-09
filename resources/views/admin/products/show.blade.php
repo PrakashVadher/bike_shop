@@ -19,6 +19,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                    <label for="product_price" class="">Price</label>
+                                    <input readonly value="{{$product->price}}" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                    <label for="product_sale_price" class="">Sale Price</label>
+                                    <input readonly value="{{$product->sale_price}}" type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
                         <div class="position-relative form-group">
                             <label for="short_description" class="">Short Description</label>
                             <input readonly value="{{$product->short_description}}" ype="text" class="form-control">
@@ -28,9 +42,20 @@
                             <input readonly value="{{$product->description}}" type="text" class="form-control">
                         </div>
                 </div>
+                <div class='list-group gallery'>            
+                    @php $images = $product->images; @endphp
+                    @if ( count($images) > 0 )                    
+                        @foreach ( explode(",", $images) as $image)
+                        <a class="thumbnail fancybox" rel="ligthbox" href="{{url('/')}}/back_end_admin/uploads/{{$image}}">
+                            <img style="height: auto;width: 300px;" class="img-responsive" alt="" src="{{url('/')}}/back_end_admin/uploads/{{$image}}" />                            
+                        </a>
+                        @endforeach           
+                    @endif  
+                </div>
 
             </div>
-        </div>        
+        </div> 
+
     </div>
 
 
@@ -38,38 +63,14 @@
   
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <div class="row">
-        <div class='list-group gallery'>            
-            @php $images = $product->images; @endphp
-            @if ( count($images) > 0 )
-                @foreach ( explode(",", $images) as $image)
-                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach   
-            @endif  
-        </div>
-    </div>
+    
 
 <style type="text/css">
-.gallery
-{
-    display: inline-block;
-    margin-top: 20px;
-}
+    .gallery { display: inline-block;margin-top: 20px;margin: 20px;padding-left: 20px;padding-right: 20px;}
 </style>
 
 <script type="text/javascript">
-$(document).ready(function(){    
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
+    $(document).ready(function(){ $(".fancybox").fancybox({ openEffect: "none",closeEffect: "none"}); });
 </script>
+
 @endsection

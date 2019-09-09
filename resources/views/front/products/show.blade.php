@@ -1,5 +1,6 @@
 @extends('layouts.front_master')
 @section('content')
+
 <section>
       <div class="container">
         <div class="single-product-details">
@@ -7,37 +8,36 @@
             <div class="col-md-6">
               <div data-options="{&quot;animation&quot;: &quot;slide&quot;, &quot;controlNav&quot;: true}" class="flexslider nav-inside control-nav-dark">
                 <ul class="slides">
-                  <li>
-                    <img src="{{URL::to('/')}}/front/images/shop/single-1.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="{{URL::to('/')}}/front/images/shop/single-2.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="{{URL::to('/')}}/front/images/shop/single-3.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="{{URL::to('/')}}/front/images/shop/single-4.jpg" alt="">
-                  </li>
+                    @php
+                        $images = explode(",",$product->images);
+                    @endphp
+
+                    @foreach ($images as $img)
+                        <li>
+                          <img src="{{url('/')}}/back_end_admin/uploads/{{$img}}" alt="">
+                        </li>
+                    @endforeach
+                    
                 </ul>
               </div>
             </div>
             <div class="col-md-5 col-md-offset-1">
               <div class="title mt-0">
-                <h2>Notch Blazer in Longline<span class="red-dot"></span></h2>
-                <p class="m-0">Free Shipping Worldwide</p>
+                <h2>{{ $product->product_name}}<span class="red-dot"></span></h2>
+                <p class="m-0">{{ $product->short_description}}</p>
               </div>
               <div class="single-product-price">
                 <div class="row">
                   <div class="col-xs-6">
-                    <h3><del>$29.99</del><span>$24.99</span></h3>
+                    <h3><del>${{ $product->sale_price}}</del><span>${{ $product->price}}</span></h3>
                   </div>
-                  <div class="col-xs-6 text-right"><span class="rating-stars">              <i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star"></i><span class="hidden-xs">(3 Reviews)</span></span>
-                  </div>
+                  <!-- <div class="col-xs-6 text-right"><span class="rating-stars">              
+                    <i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star full"></i><i class="ti-star"></i><span class="hidden-xs">(3 Reviews)</span></span>
+                  </div> -->
                 </div>
               </div>
               <div class="single-product-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat iste natus at impedit quo consequuntur, quam, vel saepe voluptatum minus temporibus excepturi aspernatur labore molestiae fugit tempora veritatis unde.</p>
+                <p>{{ $product->description}}</p>
               </div>
               <div class="single-product-add">
                 <form action="#" class="inline-form">
@@ -46,7 +46,7 @@
                   </div>
                 </form>
               </div>
-              <div class="single-product-list">
+              <!-- <div class="single-product-list">
                 <ul>
                   <li><span>Sizes:</span> S, M, L, XL</li>
                   <li><span>Colors:</span> Blue, Red, Grey</li>
@@ -55,7 +55,7 @@
                   <li><span>Tags:</span><a href="#">Outfit</a>-<a href="#">Jeans</a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- end of row-->

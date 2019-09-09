@@ -14,6 +14,7 @@
 Route::group(['namespace' => 'Front', 'as' => 'front.'], function () {
 	Route::get('/', 'HomeController@index');
 	Route::get('home', 'HomeController@index')->name('home');
-	Route::get('products', 'ProductsController@index')->name('products');
-	Route::get('products/{id}', 'ProductsController@show');
+	// Route::get('products', 'ProductsController@index')->name('products');
+	// Route::get('products/{id}', 'ProductsController@show');
+	Route::resource('products','ProductsController')->only(['index','show']);
 });
