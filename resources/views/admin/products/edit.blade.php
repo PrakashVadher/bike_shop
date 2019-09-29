@@ -46,21 +46,21 @@
                             <label for="description" class="">Full Description</label>
                             <input value="{{$product->description}}"name="description" id="description" placeholder="Enter Description" type="text" class="form-control">
                         </div>
-                        <!-- <div class="form-row">
+                        <div class="form-row">
                             <div class="col-md-6">
                                 <div class="position-relative form-group">
                                     <label for="exampleCity" class="">Images</label>
                                     <input name="images[]" id="images" type="file" class="form-control-file" multiple>
                                 </div>
                             </div>                            
-                        </div> -->
+                        </div>
 
                         <div class="form-row">                            
-                            @php $images = $product->images; @endphp
-                            @if ( count($images) > 0 )                    
-                                @foreach ( explode(",", $images) as $image)
-                                <a class="thumbnail fancybox" rel="ligthbox" href="{{url('/')}}/back_end_admin/uploads/{{$image}}">
-                                    <img style="height: auto;width: 300px;" class="img-responsive" alt="" src="{{url('/')}}/back_end_admin/uploads/{{$image}}" />                            
+                            @php $images = explode(",", $product->images); @endphp
+                            @if ( !empty($images) )                    
+                                @foreach ( $images as $image)
+                                <a class="thumbnail fancybox" rel="ligthbox" href="{{asset('/public/back_end_admin/uploads')}}/{{$image}}">
+                                    <img style="height: auto;width: 300px;" class="img-responsive" alt="" src="{{asset('/public/back_end_admin/uploads')}}/{{$image}}" />                            
                                 </a>
                                 @endforeach           
                             @endif                                                           

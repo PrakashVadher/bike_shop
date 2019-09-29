@@ -14,7 +14,7 @@
 
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="{{URL::to('/')}}/back_end_admin/assets/style.css" rel="stylesheet">
+<link href="{{asset('/public/back_end_admin/assets/style.css') }}" rel="stylesheet">
  @yield('stylesheets')
 </head>
     <body>
@@ -46,7 +46,7 @@
                 <!-- @include('layouts.admin_ui_theme_settings') -->
         </div>
         <!-- @include('layouts.admin_server_status') -->
-        <script type="text/javascript" src="{{URL::to('/')}}/back_end_admin/assets/scripts/main.js"></script>
+        <script type="text/javascript" src="{{asset('/public/back_end_admin/assets/scripts/main.js')}}"></script>
         @yield('scripts')
     </body>
 </html>

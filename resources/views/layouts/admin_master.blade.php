@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
     />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="{{asset('/public/back_end_admin/assets/images/favicon.ico')}}">
 
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="{{URL::to('/')}}/back_end_admin/assets/style.css" rel="stylesheet">
+<link href="{{asset('/public/back_end_admin/assets/style.css')}}" rel="stylesheet">
  @yield('stylesheets')
 </head>
     <body>
@@ -47,7 +47,7 @@
                 <!-- @include('layouts.admin_ui_theme_settings') -->
         </div>
         <!-- @include('layouts.admin_server_status') -->
-        <script type="text/javascript" src="{{URL::to('/')}}/back_end_admin/assets/scripts/main.js"></script>
+        <script type="text/javascript" src="{{asset('/public/back_end_admin/assets/scripts/main.js')}}"></script>
         @yield('scripts')
     </body>
 </html>

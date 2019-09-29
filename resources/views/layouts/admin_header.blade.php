@@ -38,7 +38,7 @@
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
                         <div class="dropdown-menu-header">
                             <div class="dropdown-menu-header-inner bg-vicious-stance">
-                                <div class="menu-header-image opacity-4" style="background-image: url('{{URL::to('/')}}/back_end_admin/assets/images/dropdown-header/city5.jpg');"></div>
+                                <div class="menu-header-image opacity-4" style="background-image: url('{{asset('/public/back_end_admin/assets/images/dropdown-header/city5.jpg')}}');"></div>
                                 <div class="menu-header-content text-white">
                                     <h5 class="menu-header-title">Grid Dashboard</h5>
                                     <h6 class="menu-header-subtitle">Easy grid navigation inside dropdowns</h6>
@@ -101,7 +101,7 @@
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
                         <div class="dropdown-menu-header mb-0">
                             <div class="dropdown-menu-header-inner bg-night-sky">
-                                <div class="menu-header-image opacity-5" style="background-image: url('{{URL::to('/')}}/back_end_admin/assets/images/dropdown-header/city2.jpg');"></div>
+                                <div class="menu-header-image opacity-5" style="background-image: url('{{asset('/public/back_end_admin/assets/images/dropdown-header/city2.jpg')}}');"></div>
                                 <div class="menu-header-content text-light">
                                     <h5 class="menu-header-title">Notifications</h5>
                                     <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
@@ -159,42 +159,42 @@
                                                                     <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/1.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/1.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/2.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/2.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/3.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/3.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/4.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/4.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/5.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/5.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/9.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/6.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/7.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/7.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon"><img
-                                                                                    src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/8.jpg"
+                                                                                    src="{{asset('/public/back_end_admin/assets/images/avatars/8.jpg')}}"
                                                                                     alt=""></div>
                                                                         </div>
                                                                         <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -336,19 +336,19 @@
                     <div class="widget-content-left">
                         <div class="btn-group">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                <img width="42" class="rounded" src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/3.jpg" alt="">
+                                <img width="42" class="rounded" src="{{asset('/public/back_end_admin/assets/images/avatars/3.jpg')}}" alt="">
                                 <i class="fa fa-angle-down ml-2 opacity-8"></i>
                             </a>
                             <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-menu-header">
                                     <div class="dropdown-menu-header-inner bg-info">
-                                        <div class="menu-header-image opacity-2" style="background-image: url('{{URL::to('/')}}/back_end_admin/assets/images/dropdown-header/city1.jpg');"></div>
+                                        <div class="menu-header-image opacity-2" style="background-image: url('{{asset('/public/back_end_admin/assets/images/dropdown-header/city1.jpg')}}');"></div>
                                         <div class="menu-header-content text-left">
                                             <div class="widget-content p-0">
                                                 <div class="widget-content-wrapper">
                                                     <div class="widget-content-left mr-3">
                                                         <img width="42" class="rounded-circle"
-                                                             src="{{URL::to('/')}}/back_end_admin/assets/images/avatars/3.jpg"
+                                                             src="{{asset('/public/back_end_admin/assets/images/avatars/3.jpg')}}"
                                                              alt="">
                                                     </div>
                                                     <div class="widget-content-left">

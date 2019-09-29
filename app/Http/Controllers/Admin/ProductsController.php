@@ -29,7 +29,7 @@ class ProductsController extends Controller {
     }
 
     public function store(Request $request) { 
-
+      
       $product_images = [];
  
       if( $request->hasfile('images') ){
@@ -60,13 +60,13 @@ class ProductsController extends Controller {
 
     public function update(Request $request, $id) {
 
-        $request->validate([
-          'product_name'=>'required',
-          'price'=>'required',
-          'status'=>'required',
-          'short_description'=> 'required',
-          'description' => 'required'
-        ]);
+      $request->validate([
+        'product_name'=>'required',
+        'price'=>'required',
+        'status'=>'required',
+        'short_description'=> 'required',
+        'description' => 'required'
+      ]);
 
       $product_images = [];
 
@@ -86,7 +86,7 @@ class ProductsController extends Controller {
         $product->status            = $request->get('status');
         $product->short_description = $request->get('short_description');
         $product->description       = $request->get('description');
-        // $product->images            = implode(",", $product_images);
+        $product->images            = implode(",", $product_images);
         
         $product->save();
 

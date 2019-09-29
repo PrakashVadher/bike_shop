@@ -132,8 +132,6 @@
       </div>
       <!-- end of container-->
     </footer>
-    <!-- end of footer-->
-    <script type="text/javascript" src="{{URL::to('/')}}/front/js/jquery.js"></script>
-    <script type="text/javascript" src="{{URL::to('/')}}/front/js/bundle.js"></script>
+    <!-- end of footer-->    
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script type="text/javascript" src="{{URL::to('/')}}/front/js/main.js"></script>
+    <script type="text/javascript" src="{{asset('/public/front/js/main.js')}}"></script>

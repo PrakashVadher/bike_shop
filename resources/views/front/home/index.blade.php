@@ -3,7 +3,7 @@
  <!-- Home section-->
     <section id="home">
       <!-- Video background-->
-      <div id="video-wrapper" data-fallback-bg="front/images/bg/5.jpg">
+      <div id="video-wrapper" data-fallback-bg="{{asset('/public/front/images/bg/5.jpg')}}">
         <div data-property="{videoURL: '9No-FiEInLA'}" class="player"></div>
       </div>
       <!-- end of video background-->
@@ -63,7 +63,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-4 img-side img-left mb-0">
             <div class="img-holder">
-              <img src="front/images/bg/33.jpg" alt="" class="bg-img">
+              <img src="{{asset('/public/front/images/bg/33.jpg')}}" alt="" class="bg-img">
               <div class="centrize">
                 <div class="v-center">
                   <div class="title txt-xs-center">
@@ -124,7 +124,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-4 img-side img-right">
             <div class="img-holder">
-              <img src="front/images/bg/10.jpg" alt="" class="bg-img">
+              <img src="{{asset('/public/front/images/bg/10.jpg')}}" alt="" class="bg-img">
             </div>
           </div>
           <!-- end of side background image-->
@@ -203,7 +203,7 @@
           <div class="work-item branding video">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/1.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/1.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -218,7 +218,7 @@
           <div class="work-item graphic printing">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/7.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/7.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -233,7 +233,7 @@
           <div class="work-item printing branding">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/6.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/6.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -248,7 +248,7 @@
           <div class="work-item video graphic">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/9.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/9.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -263,7 +263,7 @@
           <div class="work-item branding graphic">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/11.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/11.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -278,7 +278,7 @@
           <div class="work-item printing graphic">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/10.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/10.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -293,7 +293,7 @@
           <div class="work-item printing branding">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/8.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/8.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -308,7 +308,7 @@
           <div class="work-item graphic video">
             <div class="work-detail">
               <a href="portfolio-single-1.html">
-                <img src="front/images/portfolio/3.jpg" alt="">
+                <img src="{{asset('/public/front/images/portfolio/3.jpg')}}" alt="">
                 <div class="work-info">
                   <div class="centrize">
                     <div class="v-center">
@@ -335,22 +335,22 @@
           <div class="boxes clients">
             <div class="row">
               <div class="col-sm-4 col-xs-6 border-right border-bottom">
-                <img src="front/images/clients/1.png" alt="" data-animated="true" class="client-image">
+                <img src="{{asset('/public/front/images/clients/1.png')}}" alt="" data-animated="true" class="client-image">
               </div>
               <div class="col-sm-4 col-xs-6 border-right border-bottom">
-                <img src="front/images/clients/2.png" alt="" data-animated="true" data-delay="500" class="client-image">
+                <img src="{{asset('/public/front/images/clients/2.png')}}" alt="" data-animated="true" data-delay="500" class="client-image">
               </div>
               <div class="col-sm-4 col-xs-6 border-bottom">
-                <img src="front/images/clients/3.png" alt="" data-animated="true" data-delay="1000" class="client-image">
+                <img src="{{asset('/public/front/images/clients/3.png')}}" alt="" data-animated="true" data-delay="1000" class="client-image">
               </div>
               <div class="col-sm-4 col-xs-6 border-right">
-                <img src="front/images/clients/4.png" alt="" data-animated="true" class="client-image">
+                <img src="{{asset('/public/front/images/clients/4.png')}}" alt="" data-animated="true" class="client-image">
               </div>
               <div class="col-sm-4 col-xs-6 border-right">
-                <img src="front/images/clients/5.png" alt="" data-animated="true" data-delay="500" class="client-image">
+                <img src="{{asset('/public/front/images/clients/5.png')}}" alt="" data-animated="true" data-delay="500" class="client-image">
               </div>
               <div class="col-sm-4 col-xs-6">
-                <img src="front/images/clients/6.png" alt="" data-animated="true" data-delay="1000" class="client-image">
+                <img src="{{asset('/public/front/images/clients/6.png')}}" alt="" data-animated="true" data-delay="1000" class="client-image">
               </div>
             </div>
             <!-- end of row-->
@@ -360,7 +360,7 @@
       </div>
     </section>
     <section class="parallax">
-      <div data-parallax="scroll" data-image-src="front/images/bg/7.jpg" class="parallax-bg"></div>
+      <div data-parallax="scroll" data-image-src="{{asset('/public/front/images/bg/7.jpg')}}" class="parallax-bg"></div>
       <div class="parallax-overlay pb-50 pt-50">
         <div class="container">
           <div class="title center">

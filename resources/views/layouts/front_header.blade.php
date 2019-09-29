@@ -3,8 +3,8 @@
         <!-- Logo container-->
         <div class="logo">
           <a href="{{URL::to('/')}}">
-            <img src="{{URL::to('/')}}/front/images/logo_light.png" alt="" class="logo-light">
-            <img src="{{URL::to('/')}}/front/images/logo_dark.png" alt="" class="logo-dark">
+            <img src="{{asset('/public/front/images/logo_light.png')}}" alt="" class="logo-light">
+            <img src="{{asset('/public/front/images/logo_dark.png')}}" alt="" class="logo-dark">
           </a>
         </div>
         <!-- End Logo container-->
@@ -55,9 +55,11 @@
                 <i class="ti-search"></i>
               </a>
               <div class="search-form">
-                <form action="#" class="inline-form">
+                <form action="search" class="inline-form" method="GET">
                   <div class="input-group">
-                    <input type="text" placeholder="Search" class="form-control"><span class="input-group-btn"><button type="button" class="btn btn-color"><span><i class="ti-search"></i></span>
+                    <input type="text" required placeholder="Search" name="query" class="form-control"><span class="input-group-btn">
+                    <button type="submit" class="btn btn-color">
+                    <span><i class="ti-search"></i></span>
                     </button>
                     </span>
                   </div>

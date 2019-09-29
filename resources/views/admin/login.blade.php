@@ -17,7 +17,7 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="{{URL::to('/')}}/back_end_admin/assets/style.css" rel="stylesheet">
+<link href="{{asset('/public/back_end_admin/assets/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -30,21 +30,21 @@
                                 <div class="slick-slider">
                                     <div>
                                         <div class="h-100 d-flex justify-content-center align-items-center bg-plum-plate" tabindex="-1">
-                                            <div class="slide-img-bg" style="background-image: url('assets/images/originals/city.jpg');"></div>
+                                            <div class="slide-img-bg" style="background-image: url('/public/assets/images/originals/city.jpg');"></div>
                                             <div class="slider-content"><h3>Perfect Balance</h3>
                                                 <p>KeroUI is like a dream. Some think it's too good to be true! Extensive collection of unified React Boostrap Components and Elements.</p></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="h-100 d-flex justify-content-center align-items-center bg-premium-dark" tabindex="-1">
-                                            <div class="slide-img-bg" style="background-image: url('assets/images/originals/citynights.jpg');"></div>
+                                            <div class="slide-img-bg" style="background-image: url('/public/assets/images/originals/citynights.jpg');"></div>
                                             <div class="slider-content"><h3>Scalable, Modular, Consistent</h3>
                                                 <p>Easily exclude the components you don't require. Lightweight, consistent Bootstrap based styles across all elements and components</p></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="h-100 d-flex justify-content-center align-items-center bg-sunny-morning" tabindex="-1">
-                                            <div class="slide-img-bg" style="background-image: url('assets/images/originals/citydark.jpg');"></div>
+                                            <div class="slide-img-bg" style="background-image: url('/public/assets/images/originals/citydark.jpg');"></div>
                                             <div class="slider-content"><h3>Complex, but lightweight</h3>
                                                 <p>We've included a lot of components that cover almost all use cases for any type of application.</p></div>
                                         </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
     </div>
-<script type="text/javascript" src="{{URL::to('/')}}/back_end_admin/assets/scripts/main.js"></script></body>
+<script type="text/javascript" src="{{asset('/public/back_end_admin/assets/scripts/main.js')}}"></script></body>
 
 <!-- Mirrored from demo.dashboardpack.com/kero-html-sidebar-pro/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Aug 2019 12:07:34 GMT -->
 </html>

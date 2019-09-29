@@ -1,6 +1,7 @@
 @extends('layouts.admin_master') @section('content')
 <style type="text/css">
 .action-button{ float: left;}
+.action-button{ margin-left: 5px;}
 
 </style>
 <div class="card mb-3">
@@ -63,7 +64,7 @@
                         }
                     @endphp
                     
-                    <td><img src="{{url('/')}}/back_end_admin/uploads/{{$image}}" height="40" width="40"/></td>
+                    <td><img src="{{asset('/public/back_end_admin/uploads')}}/{{$image}}" height="40" width="40"/></td>
                     
                     <td>{{ $product->price }}</td>
                     <td>{{ $product->sale_price }}</td>

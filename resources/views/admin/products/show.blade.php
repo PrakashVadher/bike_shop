@@ -43,13 +43,16 @@
                         </div>
                 </div>
                 <div class='list-group gallery'>            
-                    @php $images = $product->images; @endphp
-                    @if ( count($images) > 0 )                    
-                        @foreach ( explode(",", $images) as $image)
-                        <a class="thumbnail fancybox" rel="ligthbox" href="{{url('/')}}/back_end_admin/uploads/{{$image}}">
-                            <img style="height: auto;width: 300px;" class="img-responsive" alt="" src="{{url('/')}}/back_end_admin/uploads/{{$image}}" />                            
+                    @php $images = explode(",", $product->images); @endphp
+                    
+                    @if ( !empty($images)  )                    
+                        @foreach ($images as $image)
+                        <a class="thumbnail fancybox" rel="ligthbox" href="{{asset('/public/back_end_admin/uploads')}}/{{$image}}">
+                            <img style="height: auto;width: 300px;" class="img-responsive" alt="" src="{{asset('/public/back_end_admin/uploads')}}/{{$image}}" />                            
                         </a>
-                        @endforeach           
+                        @endforeach   
+                    @else
+                        <h1>No Images</h1>
                     @endif  
                 </div>
 

@@ -14,7 +14,7 @@
 
                     @foreach ($images as $img)
                         <li>
-                          <img src="{{url('/')}}/back_end_admin/uploads/{{$img}}" alt="">
+                          <img src="{{asset('/public/back_end_admin/uploads')}}/{{$img}}" alt="">
                         </li>
                     @endforeach
                     
@@ -167,7 +167,7 @@
               <div class="shop-product">
                 <div class="product-thumb">
                   <a href="#">
-                    <img src="{{URL::to('/')}}/front/images/shop/1.jpg" alt="">
+                    <img src="{{asset('/public/front/images/shop/1.jpg')}}" alt="">
                   </a>
                 </div>
                 <div class="product-info">
@@ -181,7 +181,7 @@
               <div class="shop-product">
                 <div class="product-thumb">
                   <a href="#">
-                    <img src="{{URL::to('/')}}/front/images/shop/2.jpg" alt="">
+                    <img src="{{asset('/public/front/images/shop/2.jpg')}}" alt="">
                   </a>
                 </div>
                 <div class="product-info">
@@ -195,7 +195,7 @@
               <div class="shop-product">
                 <div class="product-thumb">
                   <a href="#">
-                    <img src="{{URL::to('/')}}/front/images/shop/3.jpg" alt="">
+                    <img src="{{asset('/public/front/images/shop/3.jpg')}}" alt="">
                   </a>
                 </div>
                 <div class="product-info">
@@ -209,7 +209,7 @@
               <div class="shop-product">
                 <div class="product-thumb">
                   <a href="#">
-                    <img src="{{URL::to('/')}}/front/images/shop/4.jpg" alt="">
+                    <img src="{{asset('/public/front/images/shop/4.jpg')}}" alt="">
                   </a>
                 </div>
                 <div class="product-info">
