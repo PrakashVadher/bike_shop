@@ -18,9 +18,6 @@ class ProductsController extends Controller {
     }
 
     public function edit(Product $product) {
-      // $id = $_REQUEST['id'];
-      // $product = Product::where('id',$id)->first();
-
       return view('admin.products.edit', compact('product'));
     }
 
@@ -86,16 +83,16 @@ class ProductsController extends Controller {
         $product->status            = $request->get('status');
         $product->short_description = $request->get('short_description');
         $product->description       = $request->get('description');
-        $product->images            = implode(",", $product_images);
-        
+        if(!empty($product_images)){
+          $product->images            = implode(",", $product_images);
+        }
+
         $product->save();
 
         return redirect('/admin/products')->with('success', 'Product has been Updated');        
     }
    
-    public function destroy(Product $product) {
-      // $id = $_REQUEST['id'];
-      // $product = Product::where('id',$id)->delete();
+    public function destroy(Product $product) {      
       $product->delete();
       return redirect('/admin/products')->with('success', 'Product has been deleted');
     }
